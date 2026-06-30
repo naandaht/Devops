@@ -1,0 +1,21 @@
+// Mensagem ao abrir a página
+alert("Bem-vindo à página de contato!");
+
+// Captura o formulário
+const formulario = document.querySelector("form");
+
+// Evento ao clicar em Enviar
+formulario.addEventListener("submit", function(event) {
+
+    event.preventDefault(); // Impede o envio do formulário
+
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+
+    if (nome === "" || email === "") {
+        alert("Preencha o nome e o e-mail!");
+    } else {
+        alert("Mensagem enviada com sucesso!");
+    }
+
+});
