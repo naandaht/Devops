@@ -1,6 +1,6 @@
 name: Deploy do Site com GitHub Actions
 
-  on:
+on:
     push:
       branches: ["main"]
 
