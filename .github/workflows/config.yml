@@ -11,7 +11,7 @@ name: Deploy do Site com GitHub Actions
 
   jobs:
     deploy:
-      runs-on: ubntu-latest
+      runs-on: ubuntu-latest
 
       steps:
       - name: Checkout do código
